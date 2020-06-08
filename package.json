@@ -1,0 +1,20 @@
+{
+  "name": "NBL_Site",
+  "version": "1.0.0",
+  "description": "Website for \"Nothing But Lashes\", a lash boutique in Redlands, CA. Built with React.js",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
