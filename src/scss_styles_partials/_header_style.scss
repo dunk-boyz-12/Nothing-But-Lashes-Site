@@ -1,4 +1,10 @@
 
+@font-face { 
+    font-family: "logo_type";
+    src: url('../fonts/main/Puzzled-Regular.ttf');
+}
+
+$Pink: lightpink;
 
 %max-h-w-in-container {
     width: 100%;
@@ -10,24 +16,69 @@
     display: grid;
     grid-template-columns: 2fr 5fr;
     grid-template-rows: 1fr;
+    color: $Pink;
+}
+
+%menu_styles {
+    margin: auto;
+    font-family: "logo_type";
+    font-size: 3.25rem;
+    font-weight: bolder;
 }
 
 .header_container > h1 {
-    margin: auto;
+    @extend %menu_styles;
+}
+
+.drop_menu_item > h3 {
+    @extend %menu_styles;
 }
 
 .button {
-    padding: 5%;
+    padding: .3rem;
     margin: auto;
-    border: solid .08rem;
+    border: solid $Pink .08rem;
     background-color: white;
-    border-radius: 4px;
-    
+    color: $Pink;
+    border-radius: 3px;
+    font-size: .6rem;
+    justify-content: center;
+    z-index: 1;
+}
+
+.button > h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.button:hover {
+    background-color: $Pink;
+    color: white;
 }
 
 #drop_menu_container {
     @extend %max-h-w-in-container;
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: $Pink;
+    transition: .5s;
 }
+
+#drop_menu_container_hidden {
+    @extend %max-h-w-in-container;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    transform: translateX(-100%);
+    transition: .5s;
+}
+
+.drop_menu_item {
+    @extend %max-h-w-in-container;
+    display: grid;
+}
+
+
