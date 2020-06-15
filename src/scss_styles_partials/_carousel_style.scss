@@ -5,8 +5,14 @@
 }
 
 #carousel_container {
-    @extend %max-h-w-in-container;
-    background: red; 
+    @extend %max-h-w-in-container;  
+    display: flex;
+    overflow: hidden;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.carousel_slide {
     min-height: 100%;
-    min-width: 100%;   
+    min-width: 100%;
 }

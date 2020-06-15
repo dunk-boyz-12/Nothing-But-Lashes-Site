@@ -1,7 +1,9 @@
 import React from 'react'
 import { Component } from 'react'
+
 import Header from './lib/Header.js'
-import Carousel from './lib/Image_Carousel.js'
+import Carousel from './lib/carousel/Carousel.js'
+import About from './lib/About.js'
 
 const Site = () => {
     return (
@@ -11,7 +13,7 @@ const Site = () => {
                 <Carousel/>
             </section>
             <section className="main_section">
-
+                <About/>
             </section>
             <section className="main_section">
 
