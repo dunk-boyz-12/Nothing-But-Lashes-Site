@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 const About = () => {
     return (
     <div id="about_container">
-        <h6>HERE OUR STORY</h6>
+        <h6>HEAR OUR STORY</h6>
         <h3>About Our Studio</h3>
         <p>     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Sed metus nibh, condimentum vel gravida et, laoreet at velit. 

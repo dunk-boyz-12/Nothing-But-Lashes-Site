@@ -10,9 +10,30 @@
     overflow: hidden;
     grid-row-start: 2;
     grid-row-end: 3;
+    align-items: center;
 }
 
 .carousel_slide {
     min-height: 100%;
-    min-width: 100%;
+    min-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    transition: linear .5s;
+}
+
+%carousel-btn-styles {
+    height: 3%;
+    width: 5%;
+    position: absolute;
+    background-color: red;
+    margin: 5%;
+}
+
+#carousel_button_right{
+    @extend %carousel-btn-styles;
+    right: 0;
+}
+
+#carousel_button_left{
+    @extend %carousel-btn-styles;
 }

@@ -19,7 +19,7 @@ $mauve: #70504B;
 
 .header_container {
     width: 100vw;
-    height: 17%;
+    height: 20%;
     position: fixed;
     display: grid;
     grid-template-columns: 2fr 5fr;
@@ -64,27 +64,29 @@ $mauve: #70504B;
 
 #drop_menu_container {
     @extend %max-h-w-in-container;
-    height: 83% !important;
-    top: 17%;
+    height: 80% !important;
+    top: 20%;
     position: fixed;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     background-color: $Pink;
     opacity: .85;
-    transition: .5s;
+    transition: ease-in-out .5s;
+    z-index: 1;
 }
 
 #drop_menu_container_hidden {
     @extend %max-h-w-in-container;
-    height: 83% !important;
-    top: 17%;
+    height: 80% !important;
+    top: 20%;
     position: fixed;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    z-index: 1;
     transform: translateX(-100%);
-    transition: .5s;
+    transition: ease-out 1s;
 }
 
 .drop_menu_item {

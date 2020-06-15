@@ -1,10 +1,14 @@
 import React, { Component, useState } from 'react'
-import styled from 'styled-components'
 
-const Slide = () => {
+const Slide = ({src}) => {
 
+   let styles = {
+      height: 90+"vh",
+      width: 100+"%",
+      opacity: 75+"%",
+   };
    return (
-        <div></div>
+        <img src={src} style={styles}></img>
    );
 
 }
