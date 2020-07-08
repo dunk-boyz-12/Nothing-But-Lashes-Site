@@ -1,0 +1,110 @@
+//var
+$Pink: lightpink;
+$White: white;
+$Gold: #d4af37;
+
+//Screen Sizes
+$screen-mobile-min: 359px;
+$screen-mobile-max: 800;
+$screen-desktop-min: 801px;
+
+//mix-ins
+@mixin mobile {
+    @media (min-width: #{$screen-mobile-min}) {
+        @content;
+    }
+    @media (max-width: #{$screen-mobile-max}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$screen-desktop-min}) {
+        @content;
+    }
+}
+
+//font faces
+@font-face {
+    font-family: "mainType";
+    src: url("./styles/fonts/main/Playfair-Display/static/PlayfairDisplay-ExtraBoldItalic.ttf");
+}
+@font-face {
+    font-family: "alt1Type";
+    src: url("./styles/fonts/text/Notable-Regular.ttf");
+}
+@font-face {
+    font-family: "alt2Type";
+    src: url("./styles/fonts/main/Limelight/Limelight-Regular.ttf");
+}
+
+.landingPage-image {
+    src: url("./components/landingPage/images-landingPage/image1-inside.jpg");
+}
+
+#total-container {
+    height: 100%;
+}
+
+#image-container {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#info-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#info-container > h2 {
+    font-family: "alt1Type";
+    font-size: 3.5rem;
+    color: $White;
+    min-width: 100%;
+    @include mobile {
+        margin: 10% 50% 25% 4%;
+    }
+    @include desktop {
+        margin: 10% auto auto auto;
+        text-align: center;
+    }
+}
+
+#info-container > h3{
+    font-family: "alt2Type";
+    color: $White;
+    text-align: center;
+    font-size: 1rem;
+    @include mobile {
+        margin: 10% 3% 10% auto;
+    }
+    @include desktop {
+        margin: 5% auto 5% auto;
+        font-size: 1.5rem;
+    }
+}
+
+#info-container > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#info-container > div > button {
+    margin: auto;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    color: $Pink;
+    border: 1px solid $Pink;
+    background-color: $White;
+    font-family: "mainType";
+    @include desktop {
+        padding: .5% .5% .5% .5%;
+    }
+}
+
+
+

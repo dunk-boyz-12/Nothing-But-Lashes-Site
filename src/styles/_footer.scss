@@ -1,0 +1,130 @@
+//variables
+$screen-mobile-min: 359px;
+$screen-mobile-max: 800;
+$screen-desktop-min: 801px;
+//var
+$Pink: lightpink;
+$White: white;
+$altPink: #ffe2e6;
+
+//mix-ins
+@mixin mobile {
+    @media (min-width: #{$screen-mobile-min}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$screen-desktop-min}) {
+        @content;
+    }
+}
+
+//font faces
+@font-face {
+    font-family: "mainType";
+    src: url("./styles/fonts/main/Playfair-Display/static/PlayfairDisplay-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "main2Type";
+    src: url("./styles/fonts/main/Abril_Fatface/AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+    font-family: "altType";
+    src: url("./styles/fonts/main/Montserrat/Montserrat-Light.ttf");
+}
+
+#footer-container {
+    width: 95%;
+    position: relative;
+    top: 15vh;
+    height: 85vh;
+    margin: 0 auto 0 auto;
+    color: $Pink;
+    overflow: hidden;
+}
+
+#address-container {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 30% auto 20% auto;
+    @include desktop {
+        margin: auto auto 5% auto;
+    }
+}
+
+#address-container > h3 {
+    min-width: 100%;
+    margin: 0 auto 3% auto;
+    font-family: "mainType";
+}
+
+#address-container > p {
+    min-width: 100%;
+    margin: 0;
+    font-family: "altType";
+    font-size: .7rem;
+}
+
+#btn-container {
+    margin: 15% auto 15% auto;
+    display: flex;
+    justify-content: center;
+    @include desktop {
+        margin: 5% auto 5% auto;
+    }
+}
+
+#social-media-container {
+    display: flex;
+    position: relative;
+}
+
+#social-media-container > a {
+    width: 50%;
+    text-align: center;
+}
+
+#copy-container {
+    width: 100%;
+    display: flex;
+    font-family: "altType";
+    color: $Pink;
+    position: absolute;
+    bottom: 0px;
+    margin-top: 5%;
+}
+
+#copy-container > p {
+    min-width: 48%;
+    font-size: .5rem;
+    margin: 0 0 2% 2%;
+}
+
+#copy-container > :nth-child(2) {
+    text-align: right;
+    margin: 0 2% 2% 0;
+    font-family: "mainType";
+}
+
+#appt-btn {
+    margin: auto;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    color: $White;
+    border: 1px solid $Pink;
+    background-color: $Pink;
+    font-family: "mainType";
+    @include desktop {
+        padding: .5% .5% .5% .5%;
+    }
+}
+
+#footer-filler {
+    width: 100%;
+    height: 30%;
+}
