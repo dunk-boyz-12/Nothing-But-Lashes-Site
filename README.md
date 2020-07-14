@@ -8,10 +8,6 @@ Creator: Nicholas Buras, nicholas.buras@trojans.dsu.edu , nickburasca@gmail.com
 
 # IMAGES OF SITE
 
-<img src="./public/homepage-mobile.png"/>
-![ImageOfSite 1](./public/about-mobile.png)
-![ImageOfSite 1](/public/extension-mobile.png)
-![ImageOfSite 1](/public/footer-mobile.png)
-![ImageOfSite 1](/public/homepage-desktop.png)
+https://github.com/dunk-boyz-12/Nothing-But-Lashes-Site/blob/master/public/homepage-mobile.png
 
 # LIVE-DEMO
