@@ -8,7 +8,7 @@ Creator: Nicholas Buras, nicholas.buras@trojans.dsu.edu , nickburasca@gmail.com
 
 # IMAGES OF SITE
 
-![ImageOfSite 1](/public/homepage-mobile.png)
+![ImageOfSite 1](/public/homepage-mobile.png?raw=true)
 ![ImageOfSite 1](/public/about-mobile.png)
 ![ImageOfSite 1](/public/extension-mobile.png)
 ![ImageOfSite 1](/public/footer-mobile.png)
