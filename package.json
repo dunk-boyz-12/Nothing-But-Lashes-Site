@@ -4,6 +4,9 @@
   "description": "Website for \"Nothing But Lashes\", a lash boutique in Redlands, CA. Built with React.js",
   "main": "index.js",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "aos": "^3.0.0-beta.6",
     "react": "^16.13.1",
     "react-anime": "^3.0.3",

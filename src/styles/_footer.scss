@@ -9,122 +9,151 @@ $altPink: #ffe2e6;
 
 //mix-ins
 @mixin mobile {
-    @media (min-width: #{$screen-mobile-min}) {
-        @content;
-    }
+  @media (min-width: #{$screen-mobile-min}) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media (min-width: #{$screen-desktop-min}) {
-        @content;
-    }
+  @media (min-width: #{$screen-desktop-min}) {
+    @content;
+  }
 }
 
 //font faces
 @font-face {
-    font-family: "mainType";
-    src: url("./styles/fonts/main/Playfair-Display/static/PlayfairDisplay-ExtraBoldItalic.ttf");
+  font-family: "mainType";
+  src: url("./styles/fonts/main/Playfair-Display/static/PlayfairDisplay-ExtraBoldItalic.ttf");
 }
 
 @font-face {
-    font-family: "main2Type";
-    src: url("./styles/fonts/main/Abril_Fatface/AbrilFatface-Regular.ttf");
-}
-
-@font-face {
-    font-family: "altType";
-    src: url("./styles/fonts/main/Montserrat/Montserrat-Light.ttf");
+  font-family: "altType";
+  src: url("./styles/fonts/main/Montserrat/Montserrat-Light.ttf");
 }
 
 #footer-container {
-    width: 95%;
-    position: relative;
-    top: 15vh;
-    height: 85vh;
-    margin: 0 auto 0 auto;
-    color: $Pink;
-    overflow: hidden;
+  width: 95%;
+  position: relative;
+  top: 15vh;
+  height: 85vh;
+  margin: 0 auto 0 auto;
+  color: $Pink;
+  overflow: hidden;
 }
 
 #address-container {
-    align-items: center;
-    text-align: center;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    margin: 30% auto 20% auto;
-    @include desktop {
-        margin: auto auto 5% auto;
-    }
+  align-items: center;
+  text-align: center;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  margin: 18% auto 8% auto;
+  @include desktop {
+    margin: 5% auto 5% auto;
+  }
 }
 
 #address-container > h3 {
-    min-width: 100%;
-    margin: 0 auto 3% auto;
-    font-family: "mainType";
+  min-width: 100%;
+  margin: 0 auto 3% auto;
+  font-family: "mainType";
 }
 
 #address-container > p {
-    min-width: 100%;
-    margin: 0;
-    font-family: "altType";
-    font-size: .7rem;
+  min-width: 100%;
+  margin: 0;
+  font-family: "altType";
+  font-size: 0.7rem;
 }
 
 #btn-container {
-    margin: 15% auto 15% auto;
-    display: flex;
-    justify-content: center;
-    @include desktop {
-        margin: 5% auto 5% auto;
-    }
+  margin: 10% auto 10% auto;
+  display: flex;
+  justify-content: center;
+  @include desktop {
+    margin: 5% auto 5% auto;
+  }
 }
 
 #social-media-container {
-    display: flex;
-    position: relative;
+  width: 100%;
+  display: flex;
+  font-family: "altType";
+  color: $Pink;
+  position: absolute;
+  bottom: 10%;
+  @include desktop {
+    bottom: 10%;
+  }
+  margin-top: 5%;
 }
 
-#social-media-container > a {
-    width: 50%;
-    text-align: center;
+.social-icon {
+  text-align: center;
+  margin: auto;
+}
+
+.social-icon:hover {
+  transition: 200ms;
+  transform: scale(1.5);
 }
 
 #copy-container {
-    width: 100%;
-    display: flex;
-    font-family: "altType";
-    color: $Pink;
-    position: absolute;
-    bottom: 0px;
-    margin-top: 5%;
+  width: 100%;
+  display: flex;
+  font-family: "altType";
+  color: $Pink;
+  position: absolute;
+  bottom: 0px;
+  margin-top: 5%;
 }
 
 #copy-container > p {
-    min-width: 48%;
-    font-size: .5rem;
-    margin: 0 0 2% 2%;
+  min-width: 48%;
+  font-size: 0.5rem;
+  margin: 0 0 2% 2%;
 }
 
 #copy-container > :nth-child(2) {
-    text-align: right;
-    margin: 0 2% 2% 0;
-    font-family: "mainType";
+  text-align: right;
+  margin: 0 2% 2% 0;
+  font-family: "mainType";
 }
 
 #appt-btn {
-    margin: auto;
-    padding: 2.5% 2.5% 2.5% 2.5%;
-    color: $White;
-    border: 1px solid $Pink;
-    background-color: $Pink;
-    font-family: "mainType";
-    @include desktop {
-        padding: .5% .5% .5% .5%;
-    }
+  margin: auto;
+  padding: 2.5% 2.5% 2.5% 2.5%;
+  color: $White;
+  border: 1px solid $Pink;
+  background-color: $Pink;
+  font-family: "mainType";
+  @include desktop {
+    padding: 0.5% 0.5% 0.5% 0.5%;
+  }
 }
 
-#footer-filler {
-    width: 100%;
-    height: 30%;
+.form-total-container {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  display: flex;
+}
+
+.form-text-container {
+  margin: 0 auto 0 auto 0;
+  width: 100%;
+}
+
+.form-text {
+  font-size: calc(0.8vw + 0.6rem);
+  font-family: "altType";
+  padding: 8% 20% 0 20%;
+  @include desktop {
+    padding: 0 20% 0 20%;
+  }
+}
+
+.form-header {
+  text-align: center;
+  font-size: calc(0.8vw + 1rem);
+  font-family: "mainType";
 }

@@ -10,173 +10,185 @@ $screen-desktop-min: 801px;
 
 //mix-ins
 @mixin mobile {
-    @media (min-width: #{$screen-mobile-min}) {
-        @content;
-    }
-    @media (max-width: #{$screen-mobile-max}) {
-        @content;
-    }
+  @media (min-width: #{$screen-mobile-min}) {
+    @content;
+  }
+  @media (max-width: #{$screen-mobile-max}) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media (min-width: #{$screen-desktop-min}) {
-        @content;
-    }
+  @media (min-width: #{$screen-desktop-min}) {
+    @content;
+  }
 }
 
 //font faces
 @font-face {
-    font-family: "mainType";
-    src: url("./styles/fonts/main/Playfair-Display/static/PlayfairDisplay-ExtraBoldItalic.ttf");
+  font-family: "mainType";
+  src: url("./styles/fonts/main/Playfair-Display/static/PlayfairDisplay-ExtraBoldItalic.ttf");
 }
 
 @font-face {
-    font-family: "altType";
-    src: url("./styles/fonts/main/Montserrat/Montserrat-Light.ttf");
+  font-family: "altType";
+  src: url("./styles/fonts/main/Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "alt2Type";
+  src: url("./styles/fonts/main/Limelight/Limelight-Regular.ttf");
 }
 
 #header-container {
-    width: 100%;
-    height: 15%;
-    background-color:$White;
-    color: $Pink;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    z-index: 2;
-    @include desktop {
-        padding: 5% 0 auto 0;
-    }
+  width: 100%;
+  height: 15%;
+  background-color: $White;
+  color: $Pink;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 2;
+  @include desktop {
+    padding: 5% 0 auto 0;
+  }
 }
 
 #header-logo {
-    padding: 0 0 0 10%;
-    min-width: 40%;
-    margin: auto 0 auto 0;
-    @include desktop {
-        min-width: 30%;
-    }
-    @include desktop {
-        padding: 0 0 0 7%;
-    }
+  padding: 0 0 0 10%;
+  min-width: 40%;
+  margin: auto 0 auto 0;
+  @include desktop {
+    min-width: 30%;
+  }
+  @include desktop {
+    padding: 0 0 0 7%;
+  }
 }
 
 #logo-text-main {
-    margin: 0;
-    display: flex;
-    font-family: "mainType";
-    @include mobile {
-        font-size: calc(.6vw + 1rem);
-    }
-    @include desktop {
-        font-size: calc(.8vw + 1rem);
-    }
+  margin: 0;
+  display: flex;
+  font-family: "mainType";
+  @include mobile {
+    font-size: calc(0.6vw + 1rem);
+  }
+  @include desktop {
+    font-size: calc(0.8vw + 1rem);
+  }
 }
 
 #logo-text {
-    margin: 0;
-    font-family: "altType";
-    font-size: calc(.6vw + .4rem);
+  margin: 0;
+  font-family: "altType";
+  font-size: calc(0.6vw + 0.4rem);
 }
 
 #logo-text2 {
-    margin: 0;
-    font-family: "altType";
-    font-size: calc(.4vw + .3rem);
-    @include desktop {
-        padding: 0 0 5% 0;
-    }
+  margin: 0;
+  font-family: "altType";
+  font-size: calc(0.4vw + 0.3rem);
+  @include desktop {
+    padding: 0 0 5% 0;
+  }
 }
 
 #header-icon {
-    @include mobile {
+  @include mobile {
     position: absolute;
     right: 0;
     height: 100%;
     min-width: 50%;
     display: grid;
-    }
-    @include desktop {
-        display: none;
-    }
+  }
+  @include desktop {
+    display: none;
+  }
 }
 
 #header-icon-btn {
-    @include mobile {
-        width: 35%;
-        height: 25%;
-        margin: auto;
-        color: $Pink;
-        font-family: "altType";
-        font-size: calc(.6vw * 1rem);
-        background-color: $White;
-        border: 1px $Pink solid;
-        border-radius: 10px;
-    }
-    @include desktop {
-        display: none;
-    }
+  @include mobile {
+    width: 35%;
+    height: 25%;
+    margin: auto;
+    color: $Pink;
+    font-family: "alt2Type";
+    font-size: calc(0.6vw * 1rem);
+    font-weight: bolder;
+    background-color: $White;
+    border: 1px $Pink solid;
+    border-radius: 10px;
+  }
+  @include desktop {
+    display: none;
+  }
 }
 
 #header-icon-btn:hover {
-    background-color: $Pink;
-    color: $White;
+  background-color: $Pink;
+  color: $White;
 }
 
 #header-longMenu {
-    @include mobile {
-        display: none;
-    }
-    @include desktop {
-        min-width: 60%;
-        min-height: 100%;
-        visibility: visible;
-        display: flex;
-        font-family: "mainType";
-    }
+  @include mobile {
+    display: none;
+  }
+  @include desktop {
+    min-width: 60%;
+    min-height: 100%;
+    visibility: visible;
+    display: flex;
+    font-family: "mainType";
+  }
 }
 
 #header-longMenu > ul {
-    list-style: none;
-    padding: 0;
-    margin: auto;
+  list-style: none;
+  padding: 0;
+  margin: auto;
 }
 
 #header-longMenu > ul > li {
-    display: inline;
-    padding: 0 5px 0 5px;
-    @include desktop {
-        padding: 0 25px 0 25px;
-    }
+  display: inline;
+  padding: 0 5px 0 5px;
+  @include desktop {
+    padding: 0 25px 0 25px;
+  }
+}
+
+#header-longMenu > ul > li:hover {
+  text-shadow: 1px 1px 0 $Pink, 1.3px 1.3px 0 $Pink, 1.5px 1.5px 0 $Pink;
+  color: $White;
+  transition: 250ms;
 }
 
 #drop-container {
-    height: 85vh;
-    width: 100vw;
-    margin: 0;
-    position: fixed;
-    z-index: 2;
-    top: 15vh;
+  height: 85vh;
+  width: 100vw;
+  margin: 0;
+  position: fixed;
+  z-index: 2;
+  top: 15vh;
 }
 
 #drop-menu {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .drop-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "mainType";
-    color: $Pink;
-    font-size: calc(2rem * .8);
-    background-color: $Pink;
-    color: $White;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "mainType";
+  color: $Pink;
+  font-size: calc(2rem * 0.8);
+  background-color: $White;
+  color: $Pink;
 }

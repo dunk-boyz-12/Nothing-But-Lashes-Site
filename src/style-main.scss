@@ -15,56 +15,55 @@ $White: white;
 
 //mix-ins
 @mixin mobile {
-    @media (min-width: #{$screen-mobile-min}) {
-        @content;
-    }
+  @media (min-width: #{$screen-mobile-min}) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media (min-width: #{$screen-desktop-min}) {
-        @content;
-    }
+  @media (min-width: #{$screen-desktop-min}) {
+    @content;
+  }
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 #root {
-    background-color: $White;
-    height: 100%;
-    min-height: 100vh;
-    margin: 0;
+  background-color: $White;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
 }
 
 #landing_container {
-    width: 95%;
-    height: 83vh;
-    top: 15vh;
-    position: relative;
-    overflow: hidden;
+  width: 95%;
+  height: 83vh;
+  top: 15vh;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  @include mobile {
     object-fit: contain;
-    @include mobile {
-        object-fit: contain;
-        margin: 0 auto 0 auto;
-    }
-    @include desktop() {
-        object-fit: contain;
-        margin: 0 auto 0 auto;
-    }
-    
+    margin: 0 auto 0 auto;
+  }
+  @include desktop() {
+    object-fit: contain;
+    margin: 0 auto 0 auto;
+  }
 }
 
 #main-content-container {
-    width: 95%;
-    top: 15vh;
-    position: relative;
-    overflow: hidden;
-    object-fit: contain;
-    margin: 0 auto 0 auto;
+  width: 95%;
+  top: 15vh;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  margin: 0 auto 0 auto;
 }
