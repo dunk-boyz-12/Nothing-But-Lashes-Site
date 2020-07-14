@@ -8,7 +8,7 @@ Creator: Nicholas Buras, nicholas.buras@trojans.dsu.edu , nickburasca@gmail.com
 
 # LIVE-DEMO
 
-nothing-but-lashes.web.app
+nothing-but-lashes.web.app nothing-but-lashes.firebaseapp.com
 
 # IMAGES OF SITE
 
