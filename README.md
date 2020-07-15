@@ -12,8 +12,8 @@ nothing-but-lashes.web.app , nothing-but-lashes.firebaseapp.com
 
 # IMAGES OF SITE
 
-![homepageMobile-image](https://github.com/dunk-boyz-12/Nothing-But-Lashes-Site/blob/master/public/homepage-mobile.png)
+![homepageMobile-image](https://github.com/dunk-boyz-12/Nothing-But-Lashes-Site/blob/master/public/hp-mobile.png)
 ![aboutMobile-image](https://github.com/dunk-boyz-12/Nothing-But-Lashes-Site/blob/master/public/about-mobile.png)
-![extensionMobile-image](https://github.com/dunk-boyz-12/Nothing-But-Lashes-Site/blob/master/public/extension-mobile.png)
+![extensionMobile-image](https://github.com/dunk-boyz-12/Nothing-But-Lashes-Site/blob/master/public/ext-mobile.png)
 ![footerMobile-image](https://github.com/dunk-boyz-12/Nothing-But-Lashes-Site/blob/master/public/footer-mobile.png)
-![homepageDesktop-image](https://github.com/dunk-boyz-12/Nothing-But-Lashes-Site/blob/master/public/homepage-desktop.png)
+![homepageDesktop-image](https://github.com/dunk-boyz-12/Nothing-But-Lashes-Site/blob/master/public/hp-desktop.png)
