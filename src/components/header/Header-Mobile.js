@@ -54,8 +54,8 @@ const Header = () => {
       <div id="header-container">
         <div id="header-logo" onClick={scrollToTop}>
           <h1 id="logo-text-main">Nothing But Lashes</h1>
-          <p id="logo-text">Yucaipa & Redlands</p>
-          <p id="logo-text2">34409 Yucaipa Blvd</p>
+          <p id="logo-text">Yucaipa & Downtown Redlands</p>
+          <p id="logo-text2">34409 Yucaipa Blvd, Yucaipa 92320</p>
         </div>
         <div id="header-icon">
           <button id="header-icon-btn" onClick={toggleMenu}>

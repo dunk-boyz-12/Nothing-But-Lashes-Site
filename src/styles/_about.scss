@@ -53,9 +53,12 @@ $screen-desktop-min: 801px;
 
 #about-heading {
   font-family: "mainType";
-  text-shadow: 1px 1px 0 $Pink, 1.3px 1.3px 0 $Pink, 1.5px 1.5px 0 $Pink,
-    1.7px 1.7px 0 $Pink, 2px 2px 0 $Pink, 2.3px 2.3px 0 $Pink,
-    2.5px 2.5px 0 $Pink, 2.7px 2.7px 0 $Pink, 3px 3px 0 $Pink;
+  text-shadow: 1px 1px 0 $Pink, 1.1px 1.1px 0 $Pink, 1.2px 1.2px 0 $Pink,
+    1.3px 1.3px 0 $Pink, 1.4px 1.4px 0 $Pink, 1.5px 1.5px 0 $Pink,
+    1.6px 1.6px 0 $Pink, 1.7px 1.7px 0 $Pink, 1.8px 1.8px 0 $Pink,
+    1.9px 1.9px 0 $Pink, 2px 2px 0 $Pink, 2.1px 2.1px 0 $Pink,
+    2.2px 2.2px 0 $Pink, 2.3px 2.3px 0 $Pink, 2.4px 2.4px 0 $Pink,
+    2.5px 2.5px 0 $Pink;
   color: $altPink;
   transform: scaleY(2);
   @include mobile {
@@ -90,7 +93,9 @@ $screen-desktop-min: 801px;
   margin: 0 2% 0 2%;
   font-family: "mainType";
   font-weight: bold;
-  text-shadow: 1px 1px 0 $Pink, 2px 2px 0 $Pink, 3px 3px 0 $Pink;
+  text-shadow: 1px 1px 0 $Pink, 1.1px 1.1px 0 $Pink, 1.2px 1.2px 0 $Pink,
+    1.3px 1.3px 0 $Pink, 1.4px 1.4px 0 $Pink, 1.5px 1.5px 0 $Pink,
+    1.6px 1.6px 0 $Pink, 1.7px 1.7px 0 $Pink, 1.8px 1.8px 0 $Pink;
   color: #ffe2e6;
   text-align: center;
   @include mobile {

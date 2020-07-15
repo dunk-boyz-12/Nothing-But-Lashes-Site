@@ -43,14 +43,14 @@ const Footer = () => {
           <br />
           Yucaipa, CA 92320
           <br />
-          (951) 888- 8765
+          (909) 918- 0101
           <br />
           lashlabrose@gmail.com
         </p>
       </div>
       <div id="social-media-container">
         <SocialIcon
-          url="http://instagram.com/lash.lab.rose?igshid=119e3d1p1czxe"
+          url="http://instagram.com/nothingbut_lashes?igshid=1rqr1ajceqi94"
           target="_blank"
           bgColor="lightpink"
           className="social-icon"
